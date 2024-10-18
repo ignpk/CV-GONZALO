@@ -1,0 +1,227 @@
+html {
+  
+  scroll-behavior: smooth;
+}
+
+*{
+  padding : 0;
+  margin : 0;
+  border : 0;
+  }
+
+  body{
+    background-color: rgb(77, 87, 128);
+    
+  }
+
+  .blended_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    
+  }
+  .topBanner{
+    backdrop-filter: blur(5px);
+    text-align: center;
+    justify-content: center;
+    z-index: 999999999;
+    position: fixed;
+    display: flex;
+  height : 40px;
+  width : 80%;
+  border-radius: 20px;
+top: 7%;
+  }
+  .botonmenu{
+    background-color: rgba(0, 0, 0, 0.442);
+    line-height: 40px;
+    color: white;
+    width: 30%;
+    height: 100%;
+border-left: 1px solid #ffffff;
+transition: 0.3s ease;
+  }
+  .topBanner .botonmenu:first-child {
+    border-radius: 200px 0px 0px 200px;
+}
+.topBanner .botonmenu:last-child {
+  border-radius: 0px 200px 200px 0px;
+}
+.botonmenu:hover{
+  box-shadow: 0px 0px 27px 8px rgba(255, 255, 255, 0.6);
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 105%;
+  transition: 0.3s ease;
+}
+
+
+  .middleBanner{
+    justify-content: center;
+    box-shadow: 1px -157px 94px 0px rgba(77, 87, 128) inset;
+    display: flex;
+    position: relative;
+background-image: url(../assets/wallpaper01.jpg);
+background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 10%;
+  }
+.circuloguia{
+  z-index: 999;
+  position: absolute;
+  bottom: -45px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.descripcionmia{
+  top: 5%;
+  position: relative;
+  display: flex;
+  width: 840px;
+  height: 400px;
+margin: auto;
+}
+.sobremi{
+  margin-left: 2%;
+  color: white;
+  text-align: left;
+  width: 400px;
+  height: 400px;
+padding: 15px;
+}
+p{
+  word-wrap: break-word;
+}
+.sobremi h1{
+  line-height: 0;
+  font-size: 340%;
+}
+.sobremi h2{
+
+  font-size: 200%;
+}
+
+.fotomia{
+  background-image: url(../assets/fotoperfil.jpg);
+  border: 5px solid white;
+  border-radius: 80px 45px 80px 45px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(130, 21, 130);
+}
+
+.banner02{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(77, 87, 128);
+}
+.iconoscategoria{
+  z-index: 99999;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 120px;
+  height: 120px;
+  bottom: -70px;
+  background-size: contain;
+
+}
+.linea{
+  padding: 10% 5% 0% 0%;
+  font-size: 200%;
+  text-align: right;
+  color: white;
+  border-right: 10px solid #ffffff;
+  position: absolute;
+  left: 0;
+  width: 50.5%;
+  height: 100%;
+}
+.lineafondo{
+  border-right: 10px solid #ffffff;
+  left: 0;
+position:absolute;
+  width: 50.5%;
+  height: 55%;
+}
+
+.banner03{
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+
+.boxinteriorbanner{
+  transition: 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 120%;
+  color: #41457a;
+  text-align: center;
+  padding: 6%;
+  border-radius: 40px;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.logotrabajo{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+.boxinteriorbanner a{
+  color: rgb(0, 88, 176);
+}
+.boxinteriorbanner a:hover{
+  transition: 0.3s ease;
+  font-size: 105%;
+  color: rgb(0, 231, 35);
+}
+
+.botoncontacto{
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.habilidad{
+font-size: 45%;
+  background-size: contain;
+margin: 0px 10px 0px 10px;
+  width: 50px;
+  height: 50px;
+  transition: 0.2s ease;
+}
+.habilidad:hover{
+  transition: 0.2s ease;
+  transform: scale(1.1);
+}
+.habilidad p{
+  z-index: 80;
+filter: opacity(0);
+  transform: translateY(60px);
+}
+.habilidad:hover p{
+  transition: 0.2s ease;
+  filter: opacity(1);
+}
