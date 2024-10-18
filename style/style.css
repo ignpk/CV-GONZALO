@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: rgb(77, 87, 128);
+  background-color: rgb(255, 255, 255);
 }
 
 .blended_grid {
@@ -29,7 +29,20 @@ body {
   width: 80%;
   border-radius: 20px;
   top: 7%;
+  animation: deslizUP 2s ease 0s 1 normal forwards;
 }
+@keyframes deslizUP {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .botonmenu {
   background-color: rgba(0, 0, 0, 0.442);
   line-height: 40px;
@@ -89,6 +102,18 @@ body {
   width: 400px;
   height: 400px;
   padding: 15px;
+  animation: deslizDER 1s ease 0s 1 normal forwards;
+}
+@keyframes deslizDER {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 p {
   word-wrap: break-word;
@@ -103,11 +128,23 @@ p {
 
 .fotomia {
   background-image: url(../assets/fotoperfil.jpg);
-  border: 5px solid white;
+
   border-radius: 80px 45px 80px 45px;
   width: 400px;
   height: 400px;
   background-color: rgb(130, 21, 130);
+  animation: deslizIZQ 1s ease 0s 1 normal forwards;
+}
+@keyframes deslizIZQ {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .banner02 {
@@ -148,6 +185,7 @@ p {
 }
 
 .banner03 {
+  background-color: rgb(77, 87, 128);
   overflow: hidden;
   justify-content: center;
   display: flex;
@@ -219,7 +257,6 @@ a {
   filter: opacity(1);
 }
 
-
 /* Media query para pantallas de menos de 480px (celulares pequeños) */
 @media (max-width: 480px) {
   .topBanner {
@@ -254,7 +291,6 @@ display: none;
   .fotomia {
 position: absolute;
     background-size: cover;
-    border: 3px solid white;
     border-radius: 40px 25px 40px 25px;
     width: 200px;
     height: 200px;
@@ -263,6 +299,86 @@ position: absolute;
   }
   .circuloguia {
     left: 45%;
+    bottom: -10px;
+    width: 30px;
+    height: 30px;
+  }
+  .iconoscategoria {
+    width: 80px;
+    height: 80px;
+    bottom: -50px;
+  }
+  .boxinteriorbanner {
+    z-index: 999;
+    font-size: 70%;
+    padding: 15% 5% 10% 5%;
+    border-radius: 20px;
+    width: 90%;
+  }
+  .habilidad {
+    margin: 10px 5px 10px 5px;
+    width: 40px;
+    height: 40px;
+  }
+  .logotrabajo {
+   transform: scale(0.7);
+  }
+  .banner02 {
+    height: 150px;
+
+  }
+  .linea {
+    padding: 17% 2% 0% 0%;
+    font-size: 100%;
+    width: 50.5%;
+    height: 100%;
+  }
+  .botoncontacto {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Media query para pantallas de menos de 800px (celulares pequeños) */
+@media (max-width: 800px) {
+
+  .middleBanner {
+    box-shadow: 1px -157px 94px 0px rgba(77, 87, 128) inset;
+    display:flex ;
+    flex-wrap: wrap;
+    top: 0%;
+  }
+  
+  .sobremi {
+    position: absolute;
+    margin-left: 0%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    top: 25%;
+  }
+
+  .sobremi h1 {
+    line-height: 0;
+    font-size: 200%;
+  }
+  .sobremi h2 {
+    font-size: 150%;
+  }
+  
+  .fotomia {
+position: absolute;
+    background-size: cover;
+    border-radius: 40px 25px 40px 25px;
+    width: 270px;
+    height: 270px;
+    top: -40%;
+    margin: 0% 25% 0% 30%;
+  }
+  .circuloguia {
+    left: 47%;
     bottom: -10px;
     width: 30px;
     height: 30px;
